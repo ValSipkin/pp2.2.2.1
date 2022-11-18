@@ -39,7 +39,7 @@ public class MainApp {
       List<User> usersByCar = userService.findUserByCar("Model2", 2);
       for (User user : usersByCar) {
          System.out.println("__________________");
-         System.out.printf("User with car: %s, %d", user.getCar().getModel(), user.getCar().getSeries());
+         System.out.printf("User with car: %s, %d\n", user.getCar().getModel(), user.getCar().getSeries());
          System.out.println("Id = "+user.getId());
          System.out.println("First Name = "+user.getFirstName());
          System.out.println("Last Name = "+user.getLastName());
